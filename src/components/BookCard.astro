@@ -13,7 +13,7 @@ const { book } = Astro.props;
   <p class="book-author">by {book.data.author}</p>
   <p class="book-summary">{book.data.summary}</p>
 
-  <a href="">Read Review</a>
+  <a href={`/books/${book.id}`}>Read Review</a>
 </div>
 
 <style>
